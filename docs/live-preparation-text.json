@@ -1,0 +1,28 @@
+{
+  "session_id": "19351d07a3dc4933b0ecd56525e6f395",
+  "state": "FAILED_RECOVERABLE",
+  "error": "Memory headroom below 4 GiB during generation. Partial work retained.",
+  "seconds": 16,
+  "source_status": "not supplied",
+  "source_summary": null,
+  "visual_observations": [],
+  "preparation_output": null,
+  "turns": 0,
+  "approval": null,
+  "active_seconds": 0.0,
+  "attempts": [
+    {
+      "status": "failed",
+      "role": "Charlie",
+      "bucket": "preparation",
+      "context": {
+        "estimated_input": 2281,
+        "output_allowance": 4096,
+        "capacity": 16384,
+        "method": "calibrated estimate",
+        "expanded": false
+      }
+    }
+  ],
+  "passed": false
+}

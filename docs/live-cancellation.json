@@ -1,0 +1,26 @@
+[
+  {
+    "model": "gpt-oss:20b",
+    "received_inference_before_close": true,
+    "residency_cleared": true,
+    "seconds_to_first_token": 3.312,
+    "seconds_from_close_to_empty_ps": 0.038,
+    "evidence_limit": "API-level cessation/residency evidence; no independent GPU instrumentation"
+  },
+  {
+    "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+    "received_inference_before_close": true,
+    "residency_cleared": true,
+    "seconds_to_first_token": 3.396,
+    "seconds_from_close_to_empty_ps": 0.047,
+    "evidence_limit": "API-level cessation/residency evidence; no independent GPU instrumentation"
+  },
+  {
+    "model": "gemma4:31b-mlx",
+    "received_inference_before_close": true,
+    "residency_cleared": true,
+    "seconds_to_first_token": 6.009,
+    "seconds_from_close_to_empty_ps": 0.049,
+    "evidence_limit": "API-level cessation/residency evidence; no independent GPU instrumentation"
+  }
+]

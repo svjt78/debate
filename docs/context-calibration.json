@@ -1,0 +1,214 @@
+[
+  {
+    "tested_contexts": [
+      16384,
+      24576,
+      32768
+    ],
+    "bytes_to_tokens": 0.322523569334777,
+    "max_bytes": 75565,
+    "runtime": {
+      "version": "0.33.3"
+    },
+    "model": {
+      "model": "gpt-oss:20b",
+      "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+      "endpoint": "http://127.0.0.1:11434"
+    },
+    "samples": [
+      {
+        "model": "gpt-oss:20b",
+        "context": 16384,
+        "usage": {
+          "input": 8142,
+          "output": 78
+        },
+        "minimum_available_gib": 14.54,
+        "seconds": 8.18,
+        "error": null
+      },
+      {
+        "model": "gpt-oss:20b",
+        "context": 24576,
+        "usage": {
+          "input": 12168,
+          "output": 80
+        },
+        "minimum_available_gib": 14.45,
+        "seconds": 11.49,
+        "error": null
+      },
+      {
+        "model": "gpt-oss:20b",
+        "context": 32768,
+        "usage": {
+          "input": 16194,
+          "output": 86
+        },
+        "minimum_available_gib": 14.51,
+        "seconds": 16.14,
+        "error": null
+      }
+    ],
+    "cancellation_verified": true,
+    "created": 1790049272.4130769,
+    "limitation": "Sample-based text calibration, not a proof against every truncation or memory workload."
+  },
+  {
+    "tested_contexts": [],
+    "bytes_to_tokens": 1,
+    "max_bytes": 0,
+    "runtime": {
+      "version": "0.33.3"
+    },
+    "model": {
+      "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+      "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+      "endpoint": "http://127.0.0.1:11434"
+    },
+    "samples": [
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 16384,
+        "usage": {
+          "input": 9177,
+          "output": 256
+        },
+        "minimum_available_gib": 11.24,
+        "seconds": 16.38,
+        "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate."
+      },
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 24576,
+        "usage": {
+          "input": 13752,
+          "output": 256
+        },
+        "minimum_available_gib": 11.01,
+        "seconds": 26.05,
+        "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate."
+      },
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 32768,
+        "usage": {
+          "input": 18327,
+          "output": 256
+        },
+        "minimum_available_gib": 10.49,
+        "seconds": 40.46,
+        "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate."
+      }
+    ],
+    "cancellation_verified": true,
+    "created": 1790049357.3161678,
+    "limitation": "Sample-based text calibration, not a proof against every truncation or memory workload."
+  },
+  {
+    "tested_contexts": [
+      16384,
+      24576,
+      32768
+    ],
+    "bytes_to_tokens": 0.3637993780189241,
+    "max_bytes": 75565,
+    "runtime": {
+      "version": "0.33.3"
+    },
+    "model": {
+      "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+      "digest": "ad815644918f0eaab341c12b67837cc6dd4562342cdaf118f83d5d554cb37226",
+      "endpoint": "http://127.0.0.1:11434"
+    },
+    "samples": [
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 16384,
+        "usage": {
+          "input": 9177,
+          "output": 2261
+        },
+        "minimum_available_gib": 12.94,
+        "seconds": 55.92,
+        "error": null
+      },
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 24576,
+        "usage": {
+          "input": 13752,
+          "output": 1683
+        },
+        "minimum_available_gib": 11.9,
+        "seconds": 59.72,
+        "error": null
+      },
+      {
+        "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+        "context": 32768,
+        "usage": {
+          "input": 18327,
+          "output": 1346
+        },
+        "minimum_available_gib": 11.39,
+        "seconds": 71.69,
+        "error": null
+      }
+    ],
+    "cancellation_verified": true,
+    "created": 1790049712.733506,
+    "limitation": "Sample-based text calibration, not a proof against every truncation or memory workload."
+  },
+  {
+    "tested_contexts": [
+      16384,
+      24576
+    ],
+    "bytes_to_tokens": 0.3950141283967571,
+    "max_bytes": 56716,
+    "runtime": {
+      "version": "0.33.3"
+    },
+    "model": {
+      "model": "gemma4:31b-mlx",
+      "digest": "a22a363052da770302019d5afab29bd967f9318e4377bddd297421189ea09d7d",
+      "endpoint": "http://127.0.0.1:11434"
+    },
+    "samples": [
+      {
+        "model": "gemma4:31b-mlx",
+        "context": 16384,
+        "usage": {
+          "input": 9972,
+          "output": 323
+        },
+        "minimum_available_gib": 7.75,
+        "seconds": 118.01,
+        "error": null
+      },
+      {
+        "model": "gemma4:31b-mlx",
+        "context": 24576,
+        "usage": {
+          "input": 14913,
+          "output": 324
+        },
+        "minimum_available_gib": 8.51,
+        "seconds": 170.24,
+        "error": null
+      },
+      {
+        "model": "gemma4:31b-mlx",
+        "context": 32768,
+        "usage": {},
+        "minimum_available_gib": 8.02,
+        "seconds": 180.12,
+        "error": ""
+      }
+    ],
+    "cancellation_verified": true,
+    "created": 1790050183.38714,
+    "limitation": "Sample-based text calibration, not a proof against every truncation or memory workload."
+  }
+]

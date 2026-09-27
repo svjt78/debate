@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+httpx
+python-multipart
+pypdf
+pdfplumber
+pypdfium2
+Pillow
+beautifulsoup4
+pytest
+pytest-asyncio
+psutil
+imageio-ffmpeg
+mlx-whisper

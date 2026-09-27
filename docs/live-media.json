@@ -1,0 +1,88 @@
+{
+  "model": {
+    "repository": "mlx-community/whisper-small-mlx",
+    "revision": "45f3915",
+    "local_path": "/Users/suvojitdutta/Documents/Rest/apps/apps/debate-lab/debate_lab/.data/auxiliary-models/whisper-small-mlx",
+    "weights_bytes": 481307592,
+    "weights_sha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5",
+    "network_mode": "HF_HUB_OFFLINE=1"
+  },
+  "tests": [
+    {
+      "file": "synthetic-speech.wav",
+      "transcript": " This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.  The weekly staffing cost is $60.",
+      "fact_checks": {
+        "40": true,
+        "24": true,
+        "60": true
+      },
+      "timestamps_valid": true,
+      "passages": [
+        {
+          "text": " This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.",
+          "locator": {
+            "start": 0.0,
+            "end": 7.08
+          },
+          "id": "Sc8f5d35c3884:P1"
+        },
+        {
+          "text": " The weekly staffing cost is $60.",
+          "locator": {
+            "start": 7.5,
+            "end": 9.54
+          },
+          "id": "Sc8f5d35c3884:P2"
+        }
+      ],
+      "frames": [],
+      "uncertainty": [
+        "Automatic local speech transcription; speaker identity is not verified. Low confidence or unintelligible speech may be mistranscribed."
+      ],
+      "passed": true,
+      "elapsed_seconds": 19.78
+    },
+    {
+      "file": "synthetic-video.mp4",
+      "transcript": " This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.  The weekly staffing cost is $60.",
+      "fact_checks": {
+        "40": true,
+        "24": true,
+        "60": true
+      },
+      "timestamps_valid": true,
+      "passages": [
+        {
+          "text": " This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.",
+          "locator": {
+            "start": 0.0,
+            "end": 7.08
+          },
+          "id": "S760aea3abda8:P1"
+        },
+        {
+          "text": " The weekly staffing cost is $60.",
+          "locator": {
+            "start": 7.5,
+            "end": 9.54
+          },
+          "id": "S760aea3abda8:P2"
+        }
+      ],
+      "frames": [
+        {
+          "path": "view-0.png",
+          "locator": {
+            "start": 0
+          }
+        }
+      ],
+      "uncertainty": [
+        "Automatic local speech transcription; speaker identity is not verified. Low confidence or unintelligible speech may be mistranscribed.",
+        "Video sampled every 30 seconds. Events between frames are not visually inspected; timestamps are approximate sampling positions."
+      ],
+      "passed": true,
+      "elapsed_seconds": 1.33
+    }
+  ]
+}

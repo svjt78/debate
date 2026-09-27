@@ -1,0 +1,76 @@
+[
+  {
+    "scenario": "long",
+    "id": "f3a997bd42044ba6982d897bb2bde5a8",
+    "state": "FAILED_RECOVERABLE",
+    "turns": 3,
+    "summary_count": 0,
+    "originals_unchanged": null,
+    "outcome": null,
+    "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate.",
+    "seconds": 74,
+    "capacities": [
+      16384
+    ]
+  },
+  {
+    "scenario": "evidence",
+    "id": "9dab0c5981ec4c209bb9ede58af3dd3e",
+    "state": "COMPLETED",
+    "turns": 4,
+    "summary_count": 0,
+    "originals_unchanged": null,
+    "outcome": "Alpha wins",
+    "error": null,
+    "seconds": 292,
+    "capacities": [
+      0,
+      16384
+    ]
+  },
+  {
+    "scenario": "summary",
+    "id": "589d033fea1b426fb0de65079ed62a17",
+    "state": "COMPLETED",
+    "turns": 8,
+    "summary_count": 0,
+    "originals_unchanged": true,
+    "outcome": "inconclusive",
+    "error": null,
+    "seconds": 100,
+    "capacities": [
+      16384
+    ]
+  },
+  {
+    "scenario": "summary",
+    "id": "07101055179c4a1b8b070ad6abf74689",
+    "state": "COMPLETED",
+    "turns": 8,
+    "summary_count": 6,
+    "originals_unchanged": true,
+    "outcome": "inconclusive",
+    "error": null,
+    "seconds": 318,
+    "capacities": [
+      16384
+    ],
+    "passed": true
+  },
+  {
+    "scenario": "long_evidence",
+    "id": "e902d2650c314fa6ba306ae39d55128d",
+    "state": "FAILED_RECOVERABLE",
+    "turns": 7,
+    "summary_count": 0,
+    "originals_unchanged": null,
+    "outcome": null,
+    "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate.",
+    "seconds": 282,
+    "capacities": [
+      0,
+      16384
+    ],
+    "passed": false
+  }
+]

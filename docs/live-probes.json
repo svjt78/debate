@@ -1,0 +1,71 @@
+[
+  {
+    "model": "gpt-oss:20b",
+    "started_at": 1790035607.6861281,
+    "available_memory_before": 26470629376,
+    "context_tokens": 4096,
+    "output_limit": 512,
+    "public_result": "{\"public_text\":\"Ready\"}",
+    "private_thinking_char_count": 267,
+    "completion": {
+      "done_reason": "stop",
+      "prompt_eval_count": 90,
+      "eval_count": 76,
+      "total_duration": 4580106833,
+      "load_duration": 3104904416
+    },
+    "elapsed_seconds": 4.581,
+    "available_memory_after": 17704697856,
+    "json_valid": true,
+    "residency_cleared": true
+  },
+  {
+    "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+    "started_at": 1790035612.328522,
+    "available_memory_before": 24913707008,
+    "context_tokens": 4096,
+    "output_limit": 512,
+    "public_result": "{\"public_text\": \"Ready\"}",
+    "private_thinking_char_count": 1980,
+    "completion": {
+      "done_reason": "stop",
+      "prompt_eval_count": 30,
+      "eval_count": 455,
+      "total_duration": 11791949250,
+      "load_duration": 5614912917
+    },
+    "elapsed_seconds": 11.794,
+    "available_memory_after": 12094160896,
+    "json_valid": true,
+    "residency_cleared": true
+  },
+  {
+    "model": "gemma4:31b-mlx",
+    "started_at": 1790035624.187559,
+    "available_memory_before": 11950620672,
+    "context_tokens": 4096,
+    "output_limit": 512,
+    "error": "structured output is unavailable"
+  },
+  {
+    "model": "gemma4:31b-mlx",
+    "started_at": 1790035716.7881339,
+    "available_memory_before": 28980510720,
+    "context_tokens": 4096,
+    "output_limit": 512,
+    "framing": "prompt JSON; strict application validation",
+    "public_result": "{\"public_text\": \"Ready\"}",
+    "private_thinking_char_count": 237,
+    "completion": {
+      "done_reason": "stop",
+      "prompt_eval_count": 39,
+      "eval_count": 82,
+      "total_duration": 8057838834,
+      "load_duration": 4312033167
+    },
+    "elapsed_seconds": 8.06,
+    "available_memory_after": 9081634816,
+    "json_valid": true,
+    "residency_cleared": true
+  }
+]

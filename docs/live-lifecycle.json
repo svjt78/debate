@@ -1,0 +1,175 @@
+{
+  "pause_check": {
+    "state": "PAUSED",
+    "completed_turns": 0,
+    "interrupted_attempts": 1,
+    "unknown_usage_labeled": true,
+    "had_public_partial": true
+  },
+  "run_id": "fcda6fa9248a4a6685d53f9f55b8cc91",
+  "state": "COMPLETED",
+  "completed_turns": 4,
+  "source_status": [
+    "admitted"
+  ],
+  "error": null,
+  "verdict": {
+    "outcome": "Bravo wins",
+    "reason": "Bravo successfully argued that synthetic evidence cannot justify the allocation of real resources, whereas Alpha's argument relied on data that both parties admitted was fictional.",
+    "justification": "Alpha based the proposal on a survey showing 60% demand (S54c6b4eed5d6:P1), but Alpha conceded that this evidence was synthetic and not based on real research. Bravo leveraged this admission to argue that operational decisions and financial expenditures cannot be justified by invented data. While Alpha attempted to mitigate this by highlighting the low cost of the trial ($60/week) and the potential for the trial to generate real data, Bravo's logical objection\u2014that the decision to initiate the trial itself lacked a factual basis\u2014was more decisive. Alpha's reliance on a source that explicitly labels itself as 'not real research' undermined the validity of the proposal.",
+    "scores": {
+      "Alpha": {
+        "evidence": 4,
+        "logic": 3,
+        "relevance": 5,
+        "engagement": 4
+      },
+      "Bravo": {
+        "evidence": 4,
+        "logic": 4,
+        "relevance": 5,
+        "engagement": 4
+      }
+    },
+    "references": [
+      "S54c6b4eed5d6:P1",
+      "T1",
+      "T2",
+      "T3",
+      "T4"
+    ],
+    "supported_claims": [
+      "60% of 40 visitors in the synthetic survey requested later Saturday closing (S54c6b4eed5d6:P1).",
+      "Staffing the extra hour costs $60 per week (S54c6b4eed5d6:P1).",
+      "The source S54c6b4eed5d6:P1 explicitly states it is 'not real research' and that 'no attendance trial has been conducted'."
+    ],
+    "unsupported_claims": [],
+    "decisive_objections": [
+      "Bravo's objection that fictional surveys cannot replace empirical data for real-world operational decisions (T2, T4)."
+    ],
+    "concessions": [
+      "Alpha conceded that the evidence is synthetic and not based on real research (T1, T3).",
+      "Alpha conceded that the $60 per week cost is an expense that must be justified (T1, T3).",
+      "Bravo conceded that the $60 per week cost is low (T2, T4)."
+    ],
+    "limitations": [
+      "The debate relied entirely on a single synthetic source, limiting the ability to evaluate the proposition against real-world library data.",
+      "This is a model assessment; resolving source references does not establish factual support."
+    ],
+    "surrender_confirmed": false,
+    "ending_reason": "normal_limit",
+    "evidence_version": 1,
+    "instruction_version": 1
+  },
+  "usage": {
+    "ingestion": 901,
+    "debate": 14583,
+    "judgment": 4658
+  },
+  "attempts": [
+    {
+      "id": "9716a73a65b94f90a341cb62d66c2bde",
+      "role": "Charlie",
+      "model": null,
+      "bucket": "ingestion",
+      "started": 1790036950.708734,
+      "heartbeat": 1790036950.708734,
+      "reservation": 0,
+      "kind": "extraction",
+      "status": "completed"
+    },
+    {
+      "id": "fab06481900f480ea022108bc71ee5a7",
+      "role": "Charlie",
+      "model": "gemma4:31b-mlx",
+      "bucket": "ingestion",
+      "reservation": 901,
+      "started": 1790036950.746888,
+      "heartbeat": 1790036971.792127,
+      "expected_revision": 5,
+      "input_tokens": 396,
+      "output_tokens": 505,
+      "status": "completed"
+    },
+    {
+      "id": "9df61c2c42d74348909368a349efde10",
+      "role": "Alpha",
+      "model": "gpt-oss:20b",
+      "bucket": "debate",
+      "reservation": 7072,
+      "started": 1790036972.153384,
+      "heartbeat": 1790036978.1699672,
+      "expected_revision": 32,
+      "input_tokens": null,
+      "output_tokens": null,
+      "invalidated": true,
+      "status": "interrupted"
+    },
+    {
+      "id": "fb4e242354db4ca48f9a0061856a5527",
+      "role": "Alpha",
+      "model": "gpt-oss:20b",
+      "bucket": "debate",
+      "reservation": 1218,
+      "started": 1790036978.423914,
+      "heartbeat": 1790036988.450685,
+      "expected_revision": 43,
+      "input_tokens": 686,
+      "output_tokens": 532,
+      "status": "completed"
+    },
+    {
+      "id": "5c0c63b2af4b418e930251e704f63b40",
+      "role": "Bravo",
+      "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+      "bucket": "debate",
+      "reservation": 1688,
+      "started": 1790036988.609837,
+      "heartbeat": 1790036999.6375391,
+      "expected_revision": 56,
+      "input_tokens": 1080,
+      "output_tokens": 608,
+      "status": "completed"
+    },
+    {
+      "id": "34bd4d8852c54ec692f1b664e9f2219e",
+      "role": "Alpha",
+      "model": "gpt-oss:20b",
+      "bucket": "debate",
+      "reservation": 1979,
+      "started": 1790037000.3319051,
+      "heartbeat": 1790037011.362029,
+      "expected_revision": 70,
+      "input_tokens": 1412,
+      "output_tokens": 567,
+      "status": "completed"
+    },
+    {
+      "id": "b288856c11cd4b1ea0c0f1c7b567e15b",
+      "role": "Bravo",
+      "model": "qwen3:30b-a3b-thinking-2507-q4_K_M",
+      "bucket": "debate",
+      "reservation": 2626,
+      "started": 1790037011.405635,
+      "heartbeat": 1790037022.437781,
+      "expected_revision": 84,
+      "input_tokens": 1879,
+      "output_tokens": 747,
+      "status": "completed"
+    },
+    {
+      "id": "78543607080b4c8c90ce4cb7ccfdb7f7",
+      "role": "Judge",
+      "model": "gemma4:31b-mlx",
+      "bucket": "judgment",
+      "reservation": 4658,
+      "started": 1790037023.428076,
+      "heartbeat": 1790037120.840251,
+      "expected_revision": 99,
+      "input_tokens": 2791,
+      "output_tokens": 1867,
+      "status": "completed"
+    }
+  ],
+  "elapsed_seconds": 171.0
+}

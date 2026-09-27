@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bytes": 559,
+  "metadata": {
+    "requested_url": "https://example.com",
+    "final_url": "https://example.com",
+    "retrieved_at": 1790037063.786108,
+    "content_type": "text/html"
+  },
+  "elapsed_seconds": 0.1
+}

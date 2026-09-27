@@ -1,0 +1,7 @@
+{
+  "state": "FAILED_RECOVERABLE",
+  "error": "Generation allowance exhausted before a complete structured response. Increase output limit in a new debate.",
+  "turns_unchanged": true,
+  "outcome": null,
+  "completed_turns": 7
+}

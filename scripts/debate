@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""Launch Debate Lab in the foreground and open its browser UI."""
+import json
+import os
+from pathlib import Path
+import signal
+import subprocess
+import time
+import urllib.error
+import urllib.request
+
+ROOT = Path(__file__).resolve().parent.parent
+URL = f"http://127.0.0.1:{int(os.environ.get('DEBATE_PORT', '8787'))}"
+
+
+def ready():
+    try:
+        with urllib.request.urlopen(URL + '/api/health', timeout=1) as response:
+            data = json.load(response)
+        return data.get('status') == 'ok' and 'search_credentials_configured' in data
+    except (OSError, ValueError, urllib.error.URLError):
+        return False
+
+
+def main():
+    if ready():
+        print(f'Debate Lab is already running at {URL}. Stop it in its original terminal.', flush=True)
+        subprocess.run(['open', URL], check=True)
+        return 0
+    process = subprocess.Popen([str(ROOT / 'scripts/launch.sh')], cwd=ROOT, start_new_session=True)
+    try:
+        for _ in range(120):
+            if process.poll() is not None:
+                return process.returncode or 1
+            if ready():
+                print(f'Debate Lab: {URL}\nPress Ctrl+C in this terminal to stop the app.', flush=True)
+                subprocess.run(['open', URL], check=True)
+                return process.wait()
+            time.sleep(0.25)
+        print('Debate Lab did not become ready. See the startup output above.', flush=True)
+        return 1
+    except KeyboardInterrupt:
+        print('\nStopping Debate Lab…', flush=True)
+        return 0
+    finally:
+        if process.poll() is None:
+            os.killpg(process.pid, signal.SIGINT)
+            try:
+                process.wait(timeout=15)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGTERM)
+                try:
+                    process.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    os.killpg(process.pid, signal.SIGKILL)
+                    process.wait()
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

@@ -1,0 +1,53 @@
+{
+  "run_id": "fac964f3d2e54e6caeae59fbb363fcf2",
+  "passed": true,
+  "source_status": "admitted",
+  "passages": [
+    {
+      "text": " This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.",
+      "locator": {
+        "start": 0.0,
+        "end": 7.08
+      },
+      "id": "S38d104a99bb7:P1"
+    },
+    {
+      "text": " The weekly staffing cost is $60.",
+      "locator": {
+        "start": 7.5,
+        "end": 9.54
+      },
+      "id": "S38d104a99bb7:P2"
+    },
+    {
+      "id": "S38d104a99bb7:P3",
+      "text": "The image consists of black text and a red graphic on a white background. The text reads \"SYNTHETIC MEDIA TEST\" on the first line and \"40 visitors / 24 requests\" on the second line. Below the text is a solid red square.",
+      "locator": {
+        "start": 0,
+        "image_file": "view-0.png"
+      },
+      "derived": true
+    }
+  ],
+  "summary": "Source S38d104a99bb7 contains a synthetic test recording and an image. Passage P1 states, 'This is a synthetic test recording. The library has 40 visitors, 24 visitors requested later hours.' Passage P2 states, 'The weekly staffing cost is $60.' Passage P3 describes an image (view-0.png) featuring black text and a red graphic on a white background; the text reads 'SYNTHETIC MEDIA TEST' on the first line and '40 visitors / 24 requests' on the second line, with a solid red square located below the text.",
+  "uncertainty": [
+    "Automatic local speech transcription; speaker identity is not verified. Low confidence or unintelligible speech may be mistranscribed.",
+    "Video sampled every 30 seconds. Events between frames are not visually inspected; timestamps are approximate sampling positions."
+  ],
+  "metadata": {
+    "transcription": {
+      "engine": "mlx-whisper",
+      "version": "0.4.3",
+      "model_path": "/Users/suvojitdutta/Documents/Rest/apps/apps/debate-lab/debate_lab/.data/auxiliary-models/whisper-small-mlx",
+      "weights_sha256": "55b6674c9b339702d486e2b1573839a66f8ec8f821ed2886993ef717a86b09f5",
+      "network_mode": "offline",
+      "speaker_labels": "not inferred"
+    }
+  },
+  "usage": {
+    "ingestion": 2179,
+    "debate": 0,
+    "judgment": 0
+  },
+  "elapsed_seconds": 50.17
+}

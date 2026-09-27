@@ -1,0 +1,9 @@
+{
+  "result": {
+    "summary": "The image features a solid red square on the left and the number 42 written in black to its right, all set against a white background.",
+    "uncertainty": [],
+    "blocking_question": ""
+  },
+  "passed_color_and_number": true,
+  "elapsed_seconds": 12.63
+}
